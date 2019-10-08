@@ -24,12 +24,12 @@
         
       <div class="container">
         <h1>SOME TABLE</h1>
-        <table class="table" data-toggle="table" data-sortable="true">
+        <table name="scoreboard" class="table" data-toggle="table" data-sortable="true">
             <thead>
                 <tr>
-                    <th data-sortable="true">Name</th>
-                    <th data-sortable="true">Score</th>
-                    <th data-sortable="true">Trial</th>
+                    <th data-field="name" data-sortable="true">Name</th>
+                    <th data-field="score" data-sortable="true">Score</th>
+                    <th data-field="trial" data-sortable="true">Trial</th>
                 </tr>
             </thead>
             <tbody>
@@ -62,7 +62,7 @@
                 <input type="number" class="form-control" name="trial" placeholder="Trial eg:5">
             </div>
             <div class="col-sm-3">
-                <button class="btn btn-primary" onclick="hello()">Submit</button>
+                <button class="btn btn-primary" onclick="submit()">Submit</button>
             </div>
         </div>
       </div>
